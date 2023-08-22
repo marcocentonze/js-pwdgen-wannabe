@@ -20,7 +20,9 @@ const favoriteColor = prompt('Inserisci il tuo colore preferito');
 
 //chiedi numero random all'utente
 
-let randomNumber = prompt('Inserisce un numero casuale');
+//let randomNumber = prompt('Inserisce un numero casuale'); andava bene ma ho provato con un generatore casuale da 0 a 100
+
+let generatorRandomNumber = Math.floor((Math.random() * 100) +1);
 
 //seleziona il tag tramite id in cui inserire il risultato
 
@@ -28,8 +30,8 @@ const passwordGeneratorElement = document.getElementById('password_generator');
 
 //Scrivi il risultato in console
 
-console.log('La password consigliata è' + userName + userSurname + favoriteColor + randomNumber);
+console.log('La password consigliata è' + userName + userSurname + favoriteColor + generatorRandomNumber);
 
 //scrivi il risultato in pagina
 
-passwordGeneratorElement.innerHTML = 'La password consigliata è ' + userName + userSurname + favoriteColor + randomNumber;
+passwordGeneratorElement.innerHTML = 'La password consigliata è ' + userName + userSurname + favoriteColor + generatorRandomNumber;
