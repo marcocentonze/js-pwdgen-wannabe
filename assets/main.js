@@ -18,14 +18,18 @@ const userSurname = prompt('Inserisci il tuo cognome');
 
 const favoriteColor = prompt('Inserisci il tuo colore preferito');
 
+//chiedi numero random all'utente
+
+let randomNumber = prompt('Inserisce un numero casuale');
+
 //seleziona il tag tramite id in cui inserire il risultato
 
 const passwordGeneratorElement = document.getElementById('password_generator');
 
 //Scrivi il risultato in console
 
-console.log('La password consigliata è' + userName + userSurname + favoriteColor);
+console.log('La password consigliata è' + userName + userSurname + favoriteColor + randomNumber);
 
 //scrivi il risultato in pagina
 
-passwordGeneratorElement.innerHTML = 'La password consigliata è ' + userName + userSurname + favoriteColor;
+passwordGeneratorElement.innerHTML = 'La password consigliata è ' + userName + userSurname + favoriteColor + randomNumber;
